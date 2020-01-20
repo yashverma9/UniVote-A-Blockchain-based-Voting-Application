@@ -34,7 +34,7 @@ Current voting systems often take time to collate and process answers. Often whe
 ~~~
 pip3 install flask
 pip3 install web3
-pip3 install SQLAlchemy (for authentication and database handling, though we weren't able to implement)
+pip3 install SQLAlchemy (for authentication and database handling for voters, parties etc)
 ~~~
 
 #### Installation of ganache
