@@ -1,0 +1,27 @@
+db.create_all()
+
+constituency_1=Constituency(constituency_name='badshapur',previous_leader='Tanmay',state_name='haryana')
+db.session.add(constituency_1)
+db.session.commit()
+
+
+voter_1=Voter(voter_id=123,voter_name='vedant',region="badshapur",voter_age=10,voter_sex='M')
+db.session.add(voter_1)
+db.session.commit()
+
+
+
+sql=text('select * from voter')
+result = db.engine.execute(sql)
+res=list(result)
+res[0][0]
+
+
+
+def pri(result):
+	for r in result:
+		print(r[0],r[1],r[2],r[3],r[4])
+
+
+
+

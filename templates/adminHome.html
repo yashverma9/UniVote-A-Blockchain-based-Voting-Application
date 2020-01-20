@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title></title>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+ 
+</head>
+ 
+<style>
+      body {
+        display: flex;
+         min-height: 100vh;
+        flex-direction: column;
+      }
+      man{
+          height: 200px;
+
+        }
+  main {
+    flex: 1 0 auto;
+  }
+.blacktext {
+        color: black;
+        font-size: 20px;
+}
+
+</style>
+
+<man>
+<nav style="height: 120px" >
+           <div class="nav-wrapper orange accent-3">
+            <img src="{{ url_for('static', filename='e-voting-logo.png') }}" alt="" height="120" width="350" style="padding-left: 250px"; >
+           
+              <div class="brand-logo center"><h3 style="color: black">Election Commission Of India</h3></div>
+
+           </div>
+        </nav>
+    </man>
+    
+<main>
+<bodyt >
+
+  
+  <div class="container">
+   <div id="card-alert" class="card light-blue lighten-5">
+                      <div class="card-content light-blue-text">
+                        <p id="loc_info">Show details</p>
+    </div>
+       </div>
+  <table>
+    <h1>
+    
+        <thead>
+          <tr>
+              <th>Query</th>
+              <th>Input</th>
+              <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>List voters eligible to vote</td>
+            <td>-----------------------------------------------------------------></td>
+            <td><form action="http://localhost:5000/result1"><button id="vote2"  class="btn waves-effect waves-light" type="submit" name="action">Submit</button></form></td>
+          </tr>
+          <tr>
+            <td>List parties contesting elections</td>
+            <td>-----------------------------------------------------------------></td>
+            <td><form action="http://localhost:5000/result2"><button id="vote3"  class="btn waves-effect waves-light" type="submit" name="action">Submit</button></form></td>
+          </tr>
+          <tr>
+            <td>List MLA's contesting elections</td>
+             <td>-----------------------------------------------------------------></td>
+            <td><form action="http://localhost:5000/result3"><button id="vote4" class="btn waves-effect waves-light" type="submit" name="action">Submit</button></form></td>
+          </tr>
+          <tr>
+            <td>List party Specific MLA's</td>
+            <form action="/result4" method="POST">
+            <td><input type="text" name="partyName" placeholder="Party name"></td>
+            <td><button id="vote1" class="btn waves-effect waves-light" type="submit" name="action">Submit</button></td>
+          </form>
+          </tr>
+          <tr>
+            <td>List MLA's standing in a constituency </td>
+            <form action="/result5" method="POST">
+            <td><input type="text" name="constituency_name" placeholder="Constituency name"></td>
+            <td><button id="vote1" class="btn waves-effect waves-light" type="submit" name="action">Submit</button></td>
+          </form>
+          </tr>
+      </h1>
+    </table>
+  </div>
+  </main>
+        </tbody>
+      </bodyt>
+
+
+ 
+
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script> 
+   <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+
+<script type="text/javascript" src="js/clist.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
