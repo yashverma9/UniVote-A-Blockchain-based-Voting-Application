@@ -49,7 +49,7 @@ Installation guide : https://www.codeooze.com/blockchain/ethereum-dev-environmen
 #### Steps to run our code
 1. Git clone this repository using the command :
 ```
-git clone https://github.com/centerofexcellencehackathon/Team-X
+git clone https://github.com/yashverma9/UniVote-A-Blockchain-based-Voting-Application
 ```
 
 2. It will be saved in the directory vote. Change directory using
